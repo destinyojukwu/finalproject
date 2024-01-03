@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+<!-- CSS Style Sheet -->
+
+{% block title %}
+    Name Input
+{% endblock %}
+
+{% block main %}
+    <form action="/nameinput" method="post">
+        <div class="mb-3">
+            <!--prompts user for name-->
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="What's your name?" name="username" placeholder="What's your name?" type="text">
+        </div>
+        <body> Welcome to Destiny's Hair page! This project will recommend you products and give you tips based on the hair needs you present. Start by putting in your name! </body>
+    <p></p><p></p> <p></p>
+    <!--image of woman's silhouette-->
+    <img src = "https://www.svgheart.com/wp-content/uploads/2021/11/afro-girl-head-curly-hair-black-woman-free-svg-file-SvgHeart.Com.png" alt = "silhouette" height = "40%" width = "auto" >
+    </form>
+{% endblock %}

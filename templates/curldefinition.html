@@ -1,0 +1,107 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Curl Definition
+{% endblock %}
+
+{% block main %}
+
+<!-- CSS Style Sheet -->
+
+<style>
+/** body of page **/
+body {
+  background-color: #F1C6FF;
+  font-family: serif;
+  color: #7E7E7E;
+}
+
+/** hair concern header **/
+
+   h2 {
+  font-size: 30px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    font-family: serif;
+    background-color: #F1C6FF;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .column {
+  float: left;
+  width: 33.33%;
+  border-right: 12px groove #F1C6FF;
+  border-left: 12px groove #F1C6FF;
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+  </style>
+
+
+    <form action="/curldefinition" method="post">
+      <h2> Curl Definition Guidance </h2>
+
+<body>
+      <h5> <em> <a href="https://www.youtube.com/watch?v=FA7ql-n020Y">Clean.</a> <a href= "https://www.youtube.com/watch?v=FjAz2OmpSjY">Moisturize.</a> <a href = "https://www.youtube.com/watch?v=0BgF0wY9Rz4">Define.</a> </em> </h5></div><p></p>
+      <div class="row">
+        <div class="column"> CLEAN. <p> Choose cleansers that thoroughly cleanse the hair without stripping too much moisture.  <p></p> <img src ="https://www.meijer.com/content/dam/meijer/product/0688/04/7140/09/0688047140097_0_A1C1_0600.png" height = "auto" width = "60%" alt = "Not Your Mother's Curl Shampoo" </p> </div>
+        <div class="column"> MOISTURIZE. <p>Optimize moisture without weighing the hair down.<p></p><img src = "https://media.ulta.com/i/ulta/2595083?w=1233&h=1233" alt = "Mielle Organics Conditioner" height = "auto" width = "60%" </p></div>
+
+        <div class="column"> DEFINE. <p> Choose mousse for a slightly defined, voluminous look, and gel for lasting curls. </p> <img src ="https://thedoux.com/cdn/shop/products/moussedef2023_1200x.png?v=1675700589" height = "auto" width = "60%" alt = "The Doux Mousse" </div>
+    <p></p>
+
+
+      </div>
+
+<!--drop down menu for other products-->
+      <div class="dropdown">
+            <button class="dropbtn">Shop Products:</button> </div>
+            <div class="dropdown-content">
+              <a href="https://www.target.com/p/not-your-mother-39-s-naturals-tahitian-gardenia-flower-38-mango-butter-curl-definition-shampoo-15-2-fl-oz/-/A-51325712?region_id=020020&ref=tgt_adv_xsp&AFID=google&fndsrc=tgtao&DFA=71700000012510316&CPNG=PLA_Beauty%2BPersonal+Care_Priority%2BShopping%7CBeauty_Ecomm_Beauty&adgroup=Health%2BBeauty_Priority+TCINs&LID=700000001170770pgs&LNM=PRODUCT_GROUP&network=g&device=c&location=9001946&targetid=pla-351186094487&gad_source=1&gclid=Cj0KCQiAhc-sBhCEARIsAOVwHuQ49XaQrXswQWF4Gcf64-IfO0XqbfLwzRScjSanHMtKIzFK13EIR0MaAk3WEALw_wcB&gclsrc=aw.ds">Not Your Mother's Curl Defining Shampoo</a>
+             <p></p>
+              <a href=https://www.walmart.com/ip/Camille-Rose-Sweet-Ginger-Cleansing-Rinse-12-oz/135368639?wmlspartner=wlpa&selectedSellerId=0&wl13=2366&adid=22222222277135368639_117755028669_12420145346&wmlspartner=wmtlabs&wl0=&wl1=g&wl2=c&wl3=501107745824&wl4=pla-2290367806927&wl5=9001946&wl6=&wl7=&wl8=&wl9=pla&wl10=8175035&wl11=local&wl12=135368639&wl13=2366&veh=sem_LIA&gclsrc=aw.ds&&adid=22222222237135368639_117755028669_12420145346&wl0=&wl1=g&wl2=c&wl3=501107745824&wl4=pla-2290367806927&wl5=9001946&wl6=&wl7=&wl8=&wl9=pla&wl10=8175035&wl11=local&wl12=135368639&veh=sem&gad_source=4&gclid=Cj0KCQiAhc-sBhCEARIsAOVwHuTncq5XGty0VZKpasMmqT54bP6npDHvusgdMiBAfTl1qHXr-kLrrnIaAtELEALw_wcB">Camille Rose Sweet Ginger Cleansing Rinse</a>
+              <p></p>
+
+              <a href="https://www.sallybeauty.com/textured-and-curly-hair-care/pomegranate-and-honey-conditioner/SBS-762039.html?gad_source=1&gclid=Cj0KCQiAhc-sBhCEARIsAOVwHuS5OR-LGDBGkgLhtexe4-QhqK0nxmwnkIF8Y6L4keodItHAr4v3arMaAg1NEALw_wcB">Mielle Organics Pomegranate and Honey Conditioner</a>
+              <p></p>
+
+              <a href="https://www.target.com/p/pacifica-pineapple-curls-curl-defining-conditioner-8-fl-oz/-/A-52583467#lnk=sametab">Pacifica Pineapple Curls Conditioner</a>
+              <p></p>
+
+              <a href="https://www.target.com/p/the-doux-mousse-def-texture-foam-7-fl-oz/-/A-52537423?ref=tgt_adv_xsp&AFID=google&fndsrc=tgtao&DFA=71700000012767058&CPNG=PLA_Beauty%2BPersonal+Care_Priority%2BShopping_Local%7CBeauty_Ecomm_Beauty&adgroup=Health%2BBeauty_Priority+TCINs&LID=700000001170770pgs&LNM=PRODUCT_GROUP&network=g&device=c&location=9001946&targetid=pla-351186094487&gad_source=1&gclid=Cj0KCQiAhc-sBhCEARIsAOVwHuT465KdB3lbNVtlJML9aap_zYBYCfbgtMHp2xsi8egZj5zXRdf9ZNQaAtPkEALw_wcB&gclsrc=aw.ds">The Doux Mousse</a>
+              <p></p>
+
+              <a href="https://www.walgreens.com/store/c/african-pride-moisture-miracle-styling-gel/ID=300415032-product">African Pride Moisture Miracle Styling Gel</a>
+            </div>
+
+        </div>
+      </body>
+    </form>
+{% endblock %}

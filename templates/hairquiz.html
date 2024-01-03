@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Hair Quiz
+{% endblock %}
+
+{% block main %}
+
+<!-- CSS Style Sheet -->
+
+<style>
+  body {
+    background: #F1C6FF;
+    font-family: serif;
+    color: #7E7E7E;
+    font-size: 30px;
+  }
+div {
+    font-size: 16px;
+    background: #F1C6FF;
+    border: 0.1px #F1C6FF;
+    padding: 2px;
+  }
+
+  button {
+    font-size: 16px;
+    background: #F1C6FF;
+    border: 1px ##C922FF;
+    padding: 2px;
+  }
+</style>
+    <form action="/hairquiz" method="post">
+<body>
+        <div class="mb-3">
+          <!--prompts user for a hair concern-->
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="hair concern?" name="hair concern?" placeholder="hair concern?" type="text">
+        </div>
+        Choose between "curl definition", "damage repair", and "dryness".
+      </body>
+    </form>
+{% endblock %}

@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Damage Repair
+{% endblock %}
+
+{% block main %}
+
+<!-- CSS Style Sheet -->
+
+<style>
+
+  body {
+  background-color: #F1C6FF;
+  font-family: serif;
+  color: #7E7E7E;
+}
+   h2 {
+  font-size: 30px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    font-family: serif;
+    background-color: #F1C6FF;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .column {
+  float: left;
+  width: 33.33%;
+  border-right: 12px groove #F1C6FF;
+  border-left: 12px groove #F1C6FF;
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+  </style>
+
+
+    <form action="/damagerepair" method="post">
+      <h2> Guidance for Damaged Hair </h2>
+
+<body>
+      <h5> <em> <a href="https://www.youtube.com/watch?v=FA7ql-n020Y">Clean.</a> <a href= "https://www.naturallycurly.com/curlreading/curl-products/the-must-see-guide-for-choosing-the-right-protein-treatment-hi
+        ">Protein.</a> <a href = "https://www.dove.com/us/en/stories/tips-and-how-to/hair-care-tips-advice/cutting-split-ends.html">Trim.</a> </em> </h5><p></p>
+      <div class="row">
+        <div class="column"> CLEAN. <p> Avoid overshampooing. Use gentle cleansers, as dry hair is more susceptible to damage.  <p></p> <img src ="https://media.ulta.com/i/ulta/2302472?w=1020&h=1020" height = "auto" width = "60%" alt = "Maui Moisture  Shampoo" </p> </div>
+        <div class="column"> PROTEIN. <p> Protein treatments help restore strength. <p></p><img src = "https://cdn11.bigcommerce.com/s-jurdqipn2k/images/stencil/1280x1280/products/2051/7437/no3-min__98510.1520541250.png?c=2" alt = "Olaplex Protein Treatment" height = "auto" width = "50%" </p></div>
+
+        <div class="column"> TRIM. <p> Trim your dead ends to prevent further damage. </p> <img src ="https://kasho-shears.com/media/catalog/product/cache/c7868cfa75de8cddbcca25ff5886970c/d/a/damascus_series_6.0_offset.png" height = "50%" width = "auto%" alt = "Hair Scissors" </div>
+    <p></p>
+
+
+      </div>
+
+<!--drop down menu for other products-->
+
+      <div class="dropdown">
+       <button class="dropbtn">Shop Products:</button> </div>
+            <div class="dropdown-content">
+              <a href="https://www.target.com/p/maui-moisture-heal-38-hydrate-shea-butter-shampoo-for-tight-curly-hair-13-fl-oz/-/A-51069290?region_id=020020&ref=tgt_adv_xsp&AFID=google&fndsrc=tgtao&DFA=71700000012510316&CPNG=PLA_Beauty%2BPersonal+Care_Priority%2BShopping%7CBeauty_Ecomm_Beauty&adgroup=Health%2BBeauty_Priority+TCINs&LID=700000001170770pgs&LNM=PRODUCT_GROUP&network=g&device=c&location=9001946&targetid=pla-351186094487&gad_source=1&gclid=Cj0KCQiAhc-sBhCEARIsAOVwHuSywsq1AzIROXQVZ6c58LdFLt-7m48IQMaBTwWcI5zz7ZcltpM_dTcaAm-AEALw_wcB&gclsrc=aw.ds">Maui Moisture Shea Butter Shampoo</a>
+             <p></p>
+              <a href=https://www.walmart.com/ip/Camille-Rose-Sweet-Ginger-Cleansing-Rinse-12-oz/135368639?wmlspartner=wlpa&selectedSellerId=0&wl13=2366&adid=22222222277135368639_117755028669_12420145346&wmlspartner=wmtlabs&wl0=&wl1=g&wl2=c&wl3=501107745824&wl4=pla-2290367806927&wl5=9001946&wl6=&wl7=&wl8=&wl9=pla&wl10=8175035&wl11=local&wl12=135368639&wl13=2366&veh=sem_LIA&gclsrc=aw.ds&&adid=22222222237135368639_117755028669_12420145346&wl0=&wl1=g&wl2=c&wl3=501107745824&wl4=pla-2290367806927&wl5=9001946&wl6=&wl7=&wl8=&wl9=pla&wl10=8175035&wl11=local&wl12=135368639&veh=sem&gad_source=4&gclid=Cj0KCQiAhc-sBhCEARIsAOVwHuTncq5XGty0VZKpasMmqT54bP6npDHvusgdMiBAfTl1qHXr-kLrrnIaAtELEALw_wcB">Camille Rose Sweet Ginger Cleansing Rinse</a>
+              <p></p>
+              <a href="https://www.amazon.com/Olaplex-Hair-Perfector-Repairing-Treatment/dp/B00SNM5US4/ref=asc_df_B00SNM5US4/?tag=hyprod-20&linkCode=df0&hvadid=318493069326&hvpos=&hvnetw=g&hvrand=6943114742708739896&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9001946&hvtargid=pla-406645326175&psc=1&mcid=90bbe3ba3bfa335c8aa1fcbb8238afb1&tag=&ref=&adgrpid=63791836202&hvpone=&hvptwo=&hvadid=318493069326&hvpos=&hvnetw=g&hvrand=6943114742708739896&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9001946&hvtargid=pla-406645326175&gclid=Cj0KCQiAhc-sBhCEARIsAOVwHuSnq7SAed5GbmMjQL2wQEGLVss6s1KogT_dPXpnNSnvAPt9KpabJCcaAsnoEALw_wcB">Olaplex Protein Treatment</a>
+              <p></p>
+              <a href="https://www.sallybeauty.com/hair-care/shop-by-product/hair-treatments/manuka-honey-and-yogurt--hydrate-and-repair-intensive-protein-treatment/SBS-476303.html?gad_source=1&gclid=Cj0KCQiAhc-sBhCEARIsAOVwHuQjlTdsSMRm91D7HCrkKvHGXKv444G3Hmw3OUgXKXRlNZIgLK6zpocaApKLEALw_wcB">Shea Moisture Manuka Honey and Yogurt Protein Treatment</a>
+              <p></p>
+              <a href="https://www.sallybeauty.com/hair-care/other-products-and-accessories/shears-and-hair-shapers/hair-scissors/styling-shears-6.5-inches/SBS-292131.html?gad_source=4&gclid=Cj0KCQiAhc-sBhCEARIsAOVwHuTnGLWitRZCXwjwLXkn_TYdcxK1aRUlLW_fZ3yYsZsiNEB7FhsNQsIaAmp2EALw_wcB">Styling Shears</a>
+              <p></p>
+            </div>
+
+        </div>
+      </body>
+    </form>
+{% endblock %}

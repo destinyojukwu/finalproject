@@ -1,0 +1,105 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Dryness
+{% endblock %}
+
+{% block main %}
+
+<!-- CSS Style Sheet -->
+
+<style>
+
+body {
+  background-color: #F1C6FF;
+  font-family: serif;
+  color: #7E7E7E;
+}
+   h2 {
+  font-size: 30px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    font-family: serif;
+    background-color: #F1C6FF;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .column {
+  float: left;
+  width: 33.33%;
+  border-right: 12px groove #F1C6FF;
+  border-left: 12px groove #F1C6FF;
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+  </style>
+
+
+    <form action="/dryness" method="post">
+      <h2> Guidance for Dry Hair </h2>
+
+<body>
+      <h5> <em> <a href="https://www.youtube.com/watch?v=FA7ql-n020Y">Clean.</a> <a href= "https://www.youtube.com/watch?v=FjAz2OmpSjY">Deep Condition.</a> <a href = "https://www.youtube.com/watch?v=0BgF0wY9Rz4">Leave-In Condition.</a> </em> </h5></div><p></p>
+      <div class="row">
+        <div class="column"> CLEAN. <p> Choose cleansers that thoroughly cleanse the hair without stripping too much moisture.  <p></p> <img src ="https://media.ulta.com/i/ulta/2302472?w=1020&h=1020" height = "auto" width = "60%" alt = "Maui Moisture  Shampoo" </p> </div>
+        <div class="column"> DEEP CONDITION. <p> Incorporate deep moisture with hair masks.<p></p><img src = "https://media.ulta.com/i/ulta/2544778?w=1233&h=1233" alt = "Honey Miracle Mask" height = "auto" width = "60%" </p></div>
+
+        <div class="column"> LEAVE-IN CONDITION. <p> Use a specialized condtioner to give you lasting moisture. </p> <img src ="https://media.ulta.com/i/ulta/2595082?w=1233&h=1233" height = "auto" width = "60%" alt = "Mielle Organics Leave-In Conditioner" </div>
+    <p></p>
+
+
+      </div>
+
+<!--drop down menu for other products-->
+
+      <div class="dropdown">
+           <button class="dropbtn">Shop Products:</button> </div>
+            <div class="dropdown-content">
+              <a href="https://www.target.com/p/maui-moisture-heal-38-hydrate-shea-butter-shampoo-for-tight-curly-hair-13-fl-oz/-/A-51069290?region_id=020020&ref=tgt_adv_xsp&AFID=google&fndsrc=tgtao&DFA=71700000012510316&CPNG=PLA_Beauty%2BPersonal+Care_Priority%2BShopping%7CBeauty_Ecomm_Beauty&adgroup=Health%2BBeauty_Priority+TCINs&LID=700000001170770pgs&LNM=PRODUCT_GROUP&network=g&device=c&location=9001946&targetid=pla-351186094487&gad_source=1&gclid=Cj0KCQiAhc-sBhCEARIsAOVwHuSywsq1AzIROXQVZ6c58LdFLt-7m48IQMaBTwWcI5zz7ZcltpM_dTcaAm-AEALw_wcB&gclsrc=aw.ds">Maui Moisture Shea Butter Shampoo</a>
+             <p></p>
+              <a href=https://www.walmart.com/ip/Camille-Rose-Sweet-Ginger-Cleansing-Rinse-12-oz/135368639?wmlspartner=wlpa&selectedSellerId=0&wl13=2366&adid=22222222277135368639_117755028669_12420145346&wmlspartner=wmtlabs&wl0=&wl1=g&wl2=c&wl3=501107745824&wl4=pla-2290367806927&wl5=9001946&wl6=&wl7=&wl8=&wl9=pla&wl10=8175035&wl11=local&wl12=135368639&wl13=2366&veh=sem_LIA&gclsrc=aw.ds&&adid=22222222237135368639_117755028669_12420145346&wl0=&wl1=g&wl2=c&wl3=501107745824&wl4=pla-2290367806927&wl5=9001946&wl6=&wl7=&wl8=&wl9=pla&wl10=8175035&wl11=local&wl12=135368639&veh=sem&gad_source=4&gclid=Cj0KCQiAhc-sBhCEARIsAOVwHuTncq5XGty0VZKpasMmqT54bP6npDHvusgdMiBAfTl1qHXr-kLrrnIaAtELEALw_wcB">Camille Rose Sweet Ginger Cleansing Rinse</a>
+              <p></p>
+
+              <a href="https://www.ulta.com/p/honey-miracle-hair-mask-deep-conditioner-pimprod2005394?sku=2544778&cmpid=PS_Non!google!Product_Listing_Ads&utm_source=google&utm_medium=paidsearch&cagpspn=pla&CATCI=pla-2190152947097&CAAGID=108111962393&CAWELAID=330000200001756531&CATARGETID=330000200002459581&CADevice=c&gad_source=1&gclid=Cj0KCQiAhc-sBhCEARIsAOVwHuTuJ_GebwHkfGrnjxZ7pm3reuZUcsjqBh4JCU5HmFACAoh44QvFoh4aAlulEALw_wcB">TGIN Honey Miracle Moisture Mask</a>
+              <p></p>
+
+              <a href="https://www.amazon.com/Moroccan-Intense-Hydrating-Fluid-Ounce/dp/B0094JGXV8/ref=asc_df_B0094JGXV8/?tag=hyprod-20&linkCode=df0&hvadid=312049381675&hvpos=&hvnetw=g&hvrand=34199906502364666&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9001946&hvtargid=pla-433251493880&psc=1&mcid=e01e5c6be90930fead00121e6b9d4c32&gclid=Cj0KCQiAhc-sBhCEARIsAOVwHuT3d0hF69kO7k8MGNF_vDoBx55sExbpk9CegiOHAVMthI6mwr3NiXYaAgElEALw_wcB">MoroccanOil Hydrating Hair Mask</a>
+              <p></p>
+              <a href="https://www.amazon.com/Mielle-White-Peony-Leave-Conditioner/dp/B01D55WP9K/ref=asc_df_B01D55WP9K/?tag=hyprod-20&linkCode=df0&hvadid=309760582713&hvpos=&hvnetw=g&hvrand=1801177061499054467&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9001946&hvtargid=pla-444190470402&psc=1&mcid=4d5fffddd48e315d8c154b7f753c1743&gclid=Cj0KCQiAhc-sBhCEARIsAOVwHuSpd-b85SmsVeMrtgd-GCicwfgQbrHbyMyduD9WKmv7q-AskeMoljIaAhytEALw_wcB">Mielle Organics White Peony Leave-In Conditioner</a>
+              <p></p>
+
+              <a href="https://www.sallybeauty.com/hair-care/shop-by-product/conditioner/leave-in-conditioner/satin-dream-smoothing-leave-in-cream-5.4-oz/SBS-006349.html?gad_source=1&gclid=Cj0KCQiAhc-sBhCEARIsAOVwHuQlqE3xt6GrFRoNnTV4LJXn0sfSCmcstKO8-CC91nUyXkfpZlJDzVoaAh6aEALw_wcB">Eva NYC Smoothing Leave-In Cream/a>
+
+            </div>
+
+        </div>
+      </body>
+    </form>
+{% endblock %}
